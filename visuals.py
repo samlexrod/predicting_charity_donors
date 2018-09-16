@@ -17,6 +17,7 @@ from time import time
 from sklearn.metrics import f1_score, accuracy_score
 
 
+
 def distribution(data, transformed = False):
     """
     Visualization code for displaying skewed distributions of features
@@ -77,7 +78,8 @@ def evaluate(results, accuracy, f1):
                 ax[j//3, j%3].set_xticklabels(["1%", "10%", "100%"])
                 ax[j//3, j%3].set_xlabel("Training Set Size")
                 ax[j//3, j%3].set_xlim((-0.1, 3.0))
-    
+                
+       
     # Add unique y-labels
     ax[0, 0].set_ylabel("Time (in seconds)")
     ax[0, 1].set_ylabel("Accuracy Score")
@@ -117,6 +119,7 @@ def evaluate(results, accuracy, f1):
     pl.suptitle("Performance Metrics for Three Supervised Learning Models", fontsize = 16, y = 1.10)
     pl.tight_layout()
     pl.show()
+
     
 
 def feature_plot(importances, X_train, y_train):
