@@ -31,6 +31,8 @@ or
 jupyter notebook finding_donors.ipynb
 ```
 
+[Go to the finding_donor.ipynb by clicking this link.](https://github.com/sammyrod/CharityML_Project/blob/master/finding_donors.ipynb)
+
 This will open the iPython Notebook software and project file in your browser.
 
 ### Data
